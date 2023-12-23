@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
+
+</head>
+
+<body>
+  <div class="container-fluid" id="main-content">
+    <div class="row">
+      <!-- Left Sidebar Content -->
+
+        <div id="bdSidebar" class="d-flex flex-column p-3 text-light offcanvas-md offcanvas-start col-md-3 col-3 ">
+
+          <div class="logo ">
+            <a href="">
+              <img class="img-fluid" src="assets/dashboard-logo.png">
+            </a>
+          </div>
+
+          <hr>
+          <ul class="mynav nav flex-column mb-auto text-black">
+            <li class="nav-item mb-1">
+              <a href="Home.html" class="active">
+                <i class="fa-solid fa-house"></i>
+                Home
+              </a>
+            </li>
+  
+            <li class="nav-item mb-1">
+              <a href="clients.html" class="">
+                <i class="fa-solid fa-person"></i>
+                Clients
+              </a>
+            </li>
+  
+            <li class="nav-item mb-1">
+  
+              <div class="accordion mt-1" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button accordion-right-button accordion-menu-button collapsed " type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Websites
+  
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <a href="dns.html"> <strong>DNS</strong> </a>
+                    </div>
+  
+                    <div class="accordion-body">
+                      <a href="staging.html"> <strong>Staging</strong> </a>
+                    </div>
+  
+                    <div class="accordion-body">
+                      <a href="databases.html"> <strong>Databases</strong> </a>
+                    </div>
+  
+                    <div class="accordion-body">
+                      <a href="ftp.html"> <strong>FTP</strong> </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+            </li>
+  
+            <li class="nav-item mb-1">
+              <a href="global-plugins.html" class="">
+                <i class="fa-solid fa-plug-circle-bolt"></i>
+                Global Plugin
+              </a>
+            </li>
+  
+            <li class="nav-item mb-1">
+              <a href="global-config.html" class="">
+                <i class="fa-solid fa-plug-circle-exclamation"></i>
+                Global Config
+              </a>
+            </li>
+  
+            <li class="nav-item mb-1">
+  
+              <div class="accordion mt-1" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button accordion-right-button accordion-menu-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      Security
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <a href="ssl.html"> <strong>SSL</strong> </a>
+                    </div>
+  
+                    <div class="accordion-body">
+                      <a href="firewall.html"> <strong>Firewall</strong> </a>
+                    </div>
+  
+                  </div>
+                </div>
+              </div>
+  
+            </li>
+  
+            <li class="nav-item mb-1">
+              <a href="migration.html" class="">
+                <i class="fa-solid fa-code-branch"></i>
+                Migrations
+              </a>
+            </li>
+  
+          </ul>
+  
+        </div>
+
+       <!-- Left sidebar content end -->
+      <!-- Right side main content -->
+      <div class="col-md-9 scrollable ">
+        <!-- Right side top header -->
+
+        <div class="top-header p-3 d-md-none d-flex justify-content-between col-md-12" >
+
+          <a href="Home.html">
+            <img class="img-fluid" src="assets/dashboard-logo.png">
+          </a>
+
+          <a href="#" class="text-light menubar-icon" data-bs-toggle="offcanvas" data-bs-target="#bdSidebar" style="font-size: 21px;">
+            <i class="fa-solid fa-bars text-light" ></i>
+          </a>
+
+        </div>
+
+        <header class="p-3 mb-3 border-bottom top-header-back">
+          <div class="container-fluid">
+            <div class="row d-flex">
+              <h2 class="col-8 d-flex mb-2 mb-lg-0 top-header-text">
+<!-- -------- -->
+                <!-- <div class=" p-0 d-md-none d-flex text-black">
+                  <a href="#" class="text-white" data-bs-toggle="offcanvas" data-bs-target="#bdSidebar">
+                    <i class="fa-solid fa-bars" style="color: black; font-size: 20px;"></i>
+                  </a>
+                </div> -->
+<!-- ------- -->
+                <span class="house-color"><i class="bi bi-house-door"></i></span><span class="right-angle-color"><i
+                    class="bi bi-chevron-right"></i></span> Dashboard
+              </h2>
+              <div class="col-4 d-flex justify-content-end" style="gap:1rem;">
+                <form class="top-header-form">
+                  <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                </form>
+
+                <div class="dropdown text-end">
+                  <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <!-- <img src="assets/profile-pic.jpeg" alt="mdo" width="32" height="32" class="rounded-circle"> -->
+
+                    <img src="assets/mairan-pic.PNG" alt="mdo" width="32" height="32" class="rounded-circle">
+                  </a>
+                  <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                    <li><a class="dropdown-item" href="#">New project...</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <!-- <div class="p-3 d-md-none d-flex text-black bg-light col-md-12">
+          <a href="#" class="text-white"
+          data-bs-toggle="offcanvas" data-bs-target="#bdSidebar">
+            <i class="fa-solid fa-bars" style="color: black;"></i>
+          </a>
+          <span class="ms-3">LOGO</span>
+        </div> -->
+         <!-- Right side top header end-->
+
+        <!-- Body content -->
+        <div class="container-fluid">
+          <!-- Card content -->
+          <div class="row padding-for-card">
+            <!-- 1st Card Content -->
+            <div class="col-xl-3 col-md-6 p-2">
+              <div class="card card-stats">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-5 icons-size"><i class="bi bi-database-fill"></i></div>
+                    <div class="col-7 text-end">
+                      <div class="numbers-data">
+                        <p class="card-category">Capacity</p>
+                        <h4 class="card-title">100GB</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <hr class="divider-part">
+                  <div>
+                    <i class="bi bi-bootstrap-reboot"></i>
+                    Updated now
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 2nd Card Content -->
+            <div class="col-xl-3 col-md-6 p-2">
+              <div class="card card-stats">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-5 icons-size"><i class="bi bi-currency-dollar" style="color:#198754;"></i></div>
+                    <div class="col-7 text-end">
+                      <div class="numbers-data">
+                        <p class="card-category">Revenue</p>
+                        <h4 class="card-title">$1500</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <hr class="divider-part">
+                  <div>
+                    <i class="bi bi-calendar"></i>
+                    Last day
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 3rd Card Content -->
+            <div class="col-xl-3 col-md-6 p-2">
+              <div class="card card-stats">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-5 icons-size"><i class="bi bi-bug" style="color:#ff9500;"></i></div>
+                    <div class="col-7 text-end">
+                      <div class="numbers-data">
+                        <p class="card-category">Errors</p>
+                        <h4 class="card-title">25</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <hr class="divider-part">
+                  <div>
+                    <i class="bi bi-clock"></i>
+                    Last day
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 4th Card Content -->
+            <div class="col-xl-3 col-md-6 p-2">
+              <div class="card card-stats">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-5 icons-size"><i class="bi bi-heart" style="color:#1d62f0;"></i></div>
+                    <div class="col-7 text-end">
+                      <div class="numbers-data">
+                        <p class="card-category">Followers</p>
+                        <h4 class="card-title">+50</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <hr class="divider-part">
+                  <div>
+                    <i class="bi bi-bootstrap-reboot"></i>
+                    Updated now
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- Card content end-->
+          <!-- Accordion content -->
+          <div class="row padding-for-accordion">
+            <div class="card accordion-space">
+              <div class="card-header accordion-header-bar">
+                <h4 class="accordion-header-text">Guidelines</h4>
+              </div>
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Accordion Item #1
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                      the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Accordion Item #2
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                      the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine
+                      this being filled with some actual content.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Accordion Item #3
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                      the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
+                      exciting happening here in terms of content, but just filling up the space to make it look, at
+                      least at first glance, a bit more representative of how this would look in a real-world
+                      application.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- Accordion content end-->
+        </div> <!-- Body content end-->
+      </div><!-- Right side main content end-->
+    </div> <!--Main Row div end-->
+  </div><!--Main Container div end-->
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
